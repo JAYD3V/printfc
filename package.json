@@ -1,0 +1,38 @@
+{
+  "name": "printfc",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "author": "A.J. Chambers <W3Dojo@Gmail.com>",
+  "description": "The simpler solution to coloring text printed in the console",
+  "homepage": "https://github.com/JAYD3V/printfc#readme",
+  "bugs": {
+    "url": "https://github.com/JAYD3V/printfc/issues"
+  },
+  "repository": "git+https://github.com/JAYD3V/printfc.git",
+  "type": "module",
+  "types": "types",
+  "exports": {
+    "import": "./builds/ECMAScript/main.mjs",
+    "require": "./builds/CommonJS/main.cjs"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.5",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "@typescript-eslint/utils": "^5.41.0",
+    "eslint": "^8.26.0",
+    "jest": "^29.2.2",
+    "typescript": "^4.8.4",
+    "typescript-eslint-language-service": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "build:rm": "tsc -b tsconfig.json --clean",
+    "build:new": "tsc -b tsconfig.json --clean && tsc -b tsconfig.json",
+    "start": "node builds/ecmas-module/main.mjs",
+    "start:mjs": "node builds/ecmas-module/main.mjs",
+    "start:cjs": "node builds/node-module/main.cjs",
+    "test": "jest builds/test"
+  }
+}

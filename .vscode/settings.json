@@ -1,0 +1,16 @@
+{
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.mts": "${capture}.mjs",
+        "*.cts": "${capture}.cjs",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json"
+    },
+    "cSpell.words": [
+        "ecmas",
+        "printfc",
+        "printrc"
+    ]
+}

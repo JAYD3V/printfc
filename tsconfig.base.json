@@ -1,0 +1,30 @@
+// TSCONFIG: BASE
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display":"TS Config Base File",
+
+  "compilerOptions": {
+    // CONFIGURE FILES TO BE REFERABLE
+    "composite": true,
+
+    // TSC EMISSIONS
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "types",
+    "noEmitOnError": true,
+    "listEmittedFiles": true,
+
+    // TSC CHECKS
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": false,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "importsNotUsedAsValues": "error",
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}

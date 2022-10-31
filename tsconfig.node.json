@@ -1,0 +1,35 @@
+{
+  "display": "CommonJS & Node 12",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
+
+  /*
+   *=============================================*
+   *> MODULE TYPE:  CommonJS
+   *> NODE LATEST:  v18
+   *> NODE OLDEST:  v12
+   *> ECMAS SPEC:   2019
+   *> NOTE: Due to post ES6 regex-features
+   ECMAS 2019 is the earliest supported spec.
+   *=============================================*
+   */
+
+  "files": [
+    "src/main.cts",
+    "src/lib/ansi.ts",
+    "src/lib/rgb.ts",
+    "src/lib/printfc.ts"
+  ],
+
+  "compilerOptions": {
+    // SUPPORT MODULE/NODE/ECMAS
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "target": "ES2019",
+
+    // PROJECT'S STRUCTURE
+    "rootDir": "src",
+    "outDir": "builds/CommonJS",
+    "tsBuildInfoFile": ".cache/cjs.build-info.json"
+  }
+}

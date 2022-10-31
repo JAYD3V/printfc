@@ -1,0 +1,32 @@
+# DEPENDANCIES
+node_modules/
+
+# CONFIGURATION FILES
+.vscode/launch.json
+package-lock.json
+.npmrc
+.prettierrc
+jest.config.ts
+.editorconfig
+
+# JAVASCRIPT
+#  NOTE: "Careful not to omit changes to `eslint.config.js`"
+builds/**/*.js
+*.cjs
+*.mjs
+
+# TYPES
+types/
+*.d.*
+
+# MAPS
+*.map.*
+*.map.d.*
+
+# TEMPORARY FILES (build-info files & logs)
+.cache/**/*
+.logs/**/*
+*.log
+*.log.txt
+*.build-info.json
+.build-info.json

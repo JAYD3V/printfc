@@ -1,0 +1,45 @@
+{
+  "display": "ESM & Node16",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
+
+  /*
+   *=============================================*
+   *> MODULE TYPE:  ECMAScript Module
+   *> NODE LATEST:  v18
+   *> NODE OLDEST:  v16
+   *> ECMAS SPEC:   2021
+   *=============================================*
+   */
+
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.test.json"
+    }
+  ],
+
+  "files": [
+    "src/main.mts",
+    "src/lib/ansi.ts",
+    "src/lib/rgb.ts",
+    "src/lib/printfc.ts"
+  ],
+
+  "compilerOptions": {
+    // SUPPORT MODULE/NODE/ECMAS
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+
+    // PROJECT'S STRUCTURE
+    "rootDir": "src",
+    "outDir": "builds/ECMAScript",
+    "tsBuildInfoFile": ".cache/esm.build-info.json",
+
+    // ESLINT-TS PLUGIN
+    "plugins": [{ "name": "typescript-eslint-language-service" }]
+  }
+}

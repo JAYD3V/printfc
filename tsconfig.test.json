@@ -1,0 +1,34 @@
+{
+  "display": "ESM & Node16 (test config)",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
+
+
+  /*
+   *=============================================*
+   *> MODULE TYPE:  ECMAScript Module
+   *> NODE LATEST:  v18
+   *> NODE OLDEST:  v16
+   *> ECMAS SPEC:   2021
+   *=============================================*
+   */
+
+  "files": [
+    "test/exec-all.test.ts",
+    "test/ansi.test.ts",
+    "test/printfc.test.ts",
+    "test/rgb.test.ts"
+  ],
+
+  "compilerOptions": {
+    // SUPPORT MODULE/NODE/ECMAS
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+
+    // PROJECT'S STRUCTURE
+    "rootDir": "test",
+    "outDir": "builds/Tests",
+    "tsBuildInfoFile": ".cache/test.build-info.json"
+  }
+}
