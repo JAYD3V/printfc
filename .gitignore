@@ -10,7 +10,6 @@ jest.config.ts
 .editorconfig
 
 # JAVASCRIPT
-#  NOTE: "Careful not to omit changes to `eslint.config.js`"
 builds/**/*.js
 *.cjs
 *.mjs
